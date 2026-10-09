@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  /* Bronze & Stone palette */
+  --color-bg:       #FAF9F6;
+  --color-surface:  #FFFFFF;
+  --color-text:     #1E1B18;
+  --color-muted:    #78716C;
+  --color-accent:   #2D8A7B;
+  --color-accent-dim: #1F6B5E;
+  --color-gold:     #C29340;
+  --color-gold-dim: #9E7530;
+  --color-border:   #E8E5E0;
+  --color-danger:   #DC5B51;
+  --color-success:  #519E6A;
+  --color-warning:  #D4953A;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(30, 27, 24, 0.04);
+  --shadow-md: 0 2px 8px rgba(30, 27, 24, 0.06);
+  --shadow-accent: 0 2px 8px rgba(45, 138, 123, 0.25);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* Safe area */
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+#root { min-height: 100vh; }
+
+/* Page fade-in */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter { animation: fadeSlideIn 0.25s ease-out both; }
+
+/* Hover lift for cards */
+.card-hover {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.card-hover:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.card-hover:active {
+  transform: scale(0.985);
+}
+
+/* Button pulse */
+.btn-pulse:active {
+  transform: scale(0.96);
+  transition: transform 0.1s ease;
+}
+
+/* Tap highlight removal for buttons */
+button {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Focus ring */
+input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 99px; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Mobile bottom safe area */
+.safe-bottom {
+  padding-bottom: var(--safe-bottom);
+}
+
+/* Status dot animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.dot-pulse { animation: pulse 2s ease-in-out infinite; }
