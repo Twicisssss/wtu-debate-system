@@ -1,4 +1,4 @@
--- 誠壹积分系统 数据库初始化脚本
+-- 辩论队积分系统 数据库初始化脚本
 --
 -- 使用方法：
 -- 1. 打开 https://supabase.com/dashboard/project/vlammjpllkjclozwjcsl/sql/new

@@ -50,10 +50,6 @@ export default function Layout() {
           <h1 className="text-[15px] font-semibold text-[var(--color-text)] leading-tight">
             武汉纺织大学辩论队
           </h1>
-          <p className="text-[12px] text-[var(--color-muted)]/70 mt-2 leading-relaxed"
-             style={{ fontFamily: "'Noto Serif SC', serif" }}>
-            誠壹所致<br />金石为开
-          </p>
         </div>
 
         <nav className="flex-1 px-3 space-y-0.5">
@@ -95,7 +91,6 @@ export default function Layout() {
           <div className="px-5 h-12 flex items-center justify-between">
             <div>
               <span className="text-[14px] font-semibold text-[var(--color-text)]">武汉纺织大学辩论队</span>
-              <span className="text-[10px] text-[var(--color-muted)] ml-1.5" style={{ fontFamily: "'Noto Serif SC', serif" }}>誠壹所致 金石为开</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-[12px] text-[var(--color-muted)]">{user?.name}</span>

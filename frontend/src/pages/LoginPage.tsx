@@ -133,10 +133,6 @@ export default function LoginPage() {
             <h1 className="text-[22px] sm:text-[24px] font-semibold text-[var(--color-text)] mb-2">
               武汉纺织大学辩论队
             </h1>
-            <p className="text-[15px] mt-4 leading-relaxed"
-               style={{ fontFamily: "'Noto Serif SC', 'Source Han Serif SC', 'STSong', serif", fontWeight: 500, color: 'var(--color-muted)' }}>
-              誠壹所致 · 金石为开
-            </p>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>

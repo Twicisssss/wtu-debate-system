@@ -19,7 +19,7 @@ function ProtectedRoute({ children }: { children: ReactNode }) {
     return (
       <div className="min-h-screen flex items-center justify-center" style={{ background: 'var(--color-bg)' }}>
         <div style={{ textAlign: 'center' }}>
-          <h1 className="text-[32px] mb-4" style={{ fontFamily: "'Noto Serif SC', serif", fontWeight: 600 }}>誠壹</h1>
+          <h1 className="text-[24px] mb-4 font-semibold" style={{ color: 'var(--color-text)' }}>武汉纺织大学辩论队</h1>
           <p style={{ color: 'var(--color-muted)', fontSize: 14 }}>加载中...</p>
         </div>
       </div>

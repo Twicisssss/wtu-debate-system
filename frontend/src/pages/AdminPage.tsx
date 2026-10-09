@@ -291,7 +291,7 @@ export default function AdminPage() {
           ) : (
             <div style={{ ...card, padding: '20px', textAlign: 'center' }}>
               <Trophy size={32} style={{ color: 'var(--color-gold)', marginBottom: 10 }} />
-              <p style={{ fontSize: 15, fontWeight: 600, marginBottom: 4 }}>誠壹 · 年度奖金已发布</p>
+              <p style={{ fontSize: 15, fontWeight: 600, marginBottom: 4 }}>年度奖金已发布</p>
               <p style={{ fontSize: 13, color: 'var(--color-muted)' }}>学年结算完成，获奖名单已公示</p>
               <p style={{ fontSize: 12, color: 'var(--color-muted)', marginTop: 8 }}>
                 机动结余 ¥{1000 - totalPrize} 由活动部记录支出
